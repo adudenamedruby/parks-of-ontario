@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oxtongue-river-algonquin-park-wallpaper-for-youtube-channel-art-142-733" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-1P-5cc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parks of ontario" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-1P-5cc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="QCj-Q1-qIq">
@@ -103,7 +103,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bgp-QP-XWz">
                                         <rect key="frame" x="0.0" y="291" width="126" height="27"/>
                                         <subviews>
-                                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slice 1" translatesAutoresizingMaskIntoConstraints="NO" id="qin-du-3Qh">
+                                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="qin-du-3Qh">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="Dm8-Ad-McZ"/>
@@ -162,7 +162,7 @@
                                     <rect key="frame" x="20" y="40" width="220" height="323"/>
                                 </variation>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="osgeo_hg_Kompass_neu_abgeschnitten" translatesAutoresizingMaskIntoConstraints="NO" id="ett-rY-sv4">
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass_background" translatesAutoresizingMaskIntoConstraints="NO" id="ett-rY-sv4">
                                 <rect key="frame" x="360" y="292" width="240" height="308"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Tnv-aT-7dM"/>
@@ -225,19 +225,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LGZ-jN-fhd">
-                                <rect key="frame" x="175" y="70" width="210" height="70"/>
+                                <rect key="frame" x="175" y="60" width="210" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Find your dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKs-7Y-sOr">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="38"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="210" height="38"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="park adventure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0o-C8-Bch">
                                         <rect key="frame" x="0.0" y="38" width="210" height="33"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="38" width="210" height="33"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -250,6 +256,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="0zx-wE-IYE"/>
                                     <constraint firstAttribute="width" constant="250" id="4n2-kk-EuK"/>
+                                    <constraint firstAttribute="height" constant="360" id="8JI-AZ-9h1"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" textLabel="I8P-WB-1Ci" style="IBUITableViewCellStyleDefault" id="nYN-yY-yfK">
@@ -274,23 +281,81 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8JI-AZ-9h1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="0zx-wE-IYE"/>
+                                        <include reference="8JI-AZ-9h1"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="9G8-vO-oCf" id="Lme-hW-wyl"/>
                                     <outlet property="delegate" destination="9G8-vO-oCf" id="3Hm-jK-hew"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnz-Cv-hnh">
+                                <rect key="frame" x="20" y="558" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="45N-1l-kCC"/>
+                                    <constraint firstAttribute="height" constant="22" id="CXR-tH-DCV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="6R4-Wc-CAk" kind="show" id="nfn-1X-rIf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Yjh-Eh-Ir9" firstAttribute="top" secondItem="LGZ-jN-fhd" secondAttribute="bottom" constant="-40" id="6rN-XX-6Lq"/>
+                            <constraint firstItem="LGZ-jN-fhd" firstAttribute="bottom" secondItem="Yjh-Eh-Ir9" secondAttribute="top" constant="-20" id="8EQ-aL-ekU"/>
                             <constraint firstAttribute="trailing" secondItem="GJV-vI-AKL" secondAttribute="trailing" id="A9Z-wk-Zt0"/>
                             <constraint firstItem="UO7-gO-PcX" firstAttribute="top" secondItem="GJV-vI-AKL" secondAttribute="bottom" id="AU9-sP-kJK"/>
+                            <constraint firstItem="Fnz-Cv-hnh" firstAttribute="leading" secondItem="Vf6-L7-uBU" secondAttribute="leadingMargin" id="IFo-9l-Wyb"/>
+                            <constraint firstItem="UO7-gO-PcX" firstAttribute="top" secondItem="Yjh-Eh-Ir9" secondAttribute="bottom" constant="20" id="MGH-8t-QPy"/>
                             <constraint firstItem="UO7-gO-PcX" firstAttribute="top" secondItem="Yjh-Eh-Ir9" secondAttribute="bottom" constant="50" id="NyV-3d-3Tn"/>
+                            <constraint firstItem="Yjh-Eh-Ir9" firstAttribute="leading" secondItem="Vf6-L7-uBU" secondAttribute="leadingMargin" constant="310" id="PNM-11-ih7"/>
+                            <constraint firstItem="LGZ-jN-fhd" firstAttribute="top" secondItem="Vf6-L7-uBU" secondAttribute="topMargin" constant="70" id="UUS-ki-0mB"/>
                             <constraint firstItem="GJV-vI-AKL" firstAttribute="top" secondItem="Vf6-L7-uBU" secondAttribute="top" id="V4X-bW-JUk"/>
                             <constraint firstItem="LGZ-jN-fhd" firstAttribute="leading" secondItem="Yjh-Eh-Ir9" secondAttribute="leading" id="Yva-Bz-7SO"/>
+                            <constraint firstItem="Yjh-Eh-Ir9" firstAttribute="trailing" secondItem="Vf6-L7-uBU" secondAttribute="trailingMargin" id="aOW-Yz-ge8"/>
                             <constraint firstItem="LGZ-jN-fhd" firstAttribute="top" secondItem="Nnp-h1-q5V" secondAttribute="bottom" constant="50" id="geh-ce-jeP"/>
                             <constraint firstItem="GJV-vI-AKL" firstAttribute="leading" secondItem="Vf6-L7-uBU" secondAttribute="leading" id="hKC-gT-guR"/>
+                            <constraint firstItem="Yjh-Eh-Ir9" firstAttribute="top" secondItem="Nnp-h1-q5V" secondAttribute="bottom" constant="20" id="kDC-di-yf4"/>
+                            <constraint firstItem="LGZ-jN-fhd" firstAttribute="leading" secondItem="Vf6-L7-uBU" secondAttribute="leadingMargin" id="kZy-aN-9cZ"/>
                             <constraint firstItem="Yjh-Eh-Ir9" firstAttribute="centerX" secondItem="Vf6-L7-uBU" secondAttribute="centerX" id="o13-PI-WVX"/>
+                            <constraint firstItem="UO7-gO-PcX" firstAttribute="top" secondItem="Fnz-Cv-hnh" secondAttribute="bottom" constant="20" id="w00-Ao-0Nh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UUS-ki-0mB"/>
+                                <exclude reference="geh-ce-jeP"/>
+                                <exclude reference="kZy-aN-9cZ"/>
+                                <exclude reference="6rN-XX-6Lq"/>
+                                <exclude reference="PNM-11-ih7"/>
+                                <exclude reference="aOW-Yz-ge8"/>
+                                <exclude reference="kDC-di-yf4"/>
+                                <exclude reference="MGH-8t-QPy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="8EQ-aL-ekU"/>
+                                <include reference="UUS-ki-0mB"/>
+                                <exclude reference="Yva-Bz-7SO"/>
+                                <include reference="kZy-aN-9cZ"/>
+                                <exclude reference="PNM-11-ih7"/>
+                                <include reference="aOW-Yz-ge8"/>
+                                <include reference="kDC-di-yf4"/>
+                                <exclude reference="o13-PI-WVX"/>
+                                <include reference="MGH-8t-QPy"/>
+                                <exclude reference="NyV-3d-3Tn"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="tableProperties" destination="Yjh-Eh-Ir9" id="J7E-Pa-Kru"/>
@@ -298,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KK6-DV-8j2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="328"/>
+            <point key="canvasLocation" x="894" y="327"/>
         </scene>
         <!--DescriptionVC-->
         <scene sceneID="rP8-P0-c56">
@@ -444,7 +509,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PKZ-fS-WfY">
-                                <rect key="frame" x="124" y="45" width="183" height="45"/>
+                                <rect key="frame" x="119" y="45" width="183" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ALGONQUIN PARK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wL-KD-0A0">
                                         <rect key="frame" x="0.0" y="0.0" width="183" height="24"/>
@@ -506,6 +571,7 @@
                     </view>
                     <connections>
                         <outlet property="parkNameLabel" destination="1wL-KD-0A0" id="faT-5C-gtx"/>
+                        <outlet property="parkPictureBanner" destination="FC6-12-C0Z" id="ODX-Xe-1Xr"/>
                         <outlet property="textField" destination="VkR-tn-VDS" id="Jb6-Hs-JP2"/>
                     </connections>
                 </viewController>
@@ -513,13 +579,83 @@
             </objects>
             <point key="canvasLocation" x="1559" y="327"/>
         </scene>
+        <!--About ScreenVC-->
+        <scene sceneID="EOD-XE-w33">
+            <objects>
+                <viewController id="6R4-Wc-CAk" customClass="AboutScreenVC" customModule="ParksOfOntario" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IOh-1c-Yvw"/>
+                        <viewControllerLayoutGuide type="bottom" id="fxa-nO-rjH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yxD-uR-5aX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-Dk-NZn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z7m-yn-EOp">
+                                <rect key="frame" x="149" y="97.5" width="302" height="405"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="kzm-SK-Yw2"/>
+                                    <constraint firstAttribute="height" constant="405" id="mdP-Hy-3DJ"/>
+                                </constraints>
+                                <string key="text">Parks of Ontario
+GPL-3.0 Copyright (C) 2016 Roux Buciu
+
+Made with love and sprinkly bits at ACME LABS
+
+The app was created to hilight the beautiful provincial parks that Ontario has to offer. Each park has a brief outline, what amenities/activities/facilities are available, links to alerts &amp; events for each park as well as contact information.
+
+Information updated: August 2016
+
+***********************************************
+ACME LABS is NOT affiliated with Ontario Provincial Parks nor with any associated government body of Ontario.
+************************************************</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb7-fp-6Cd">
+                                <rect key="frame" x="11" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6dC-sf-5Ys"/>
+                                    <constraint firstAttribute="width" constant="46" id="k3F-Ig-ltn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="6R4-Wc-CAk" eventType="touchUpInside" id="yqV-HO-dn1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z7m-yn-EOp" firstAttribute="centerY" secondItem="yxD-uR-5aX" secondAttribute="centerY" id="0mt-Ie-uzy"/>
+                            <constraint firstItem="fxa-nO-rjH" firstAttribute="top" secondItem="gPc-Dk-NZn" secondAttribute="bottom" id="5V1-e4-Whj"/>
+                            <constraint firstItem="Jb7-fp-6Cd" firstAttribute="leading" secondItem="yxD-uR-5aX" secondAttribute="leadingMargin" constant="-9" id="R4K-95-JXP"/>
+                            <constraint firstItem="Z7m-yn-EOp" firstAttribute="centerX" secondItem="yxD-uR-5aX" secondAttribute="centerX" id="aue-Dc-I07"/>
+                            <constraint firstAttribute="trailing" secondItem="gPc-Dk-NZn" secondAttribute="trailing" id="eGH-PU-9Op"/>
+                            <constraint firstItem="Jb7-fp-6Cd" firstAttribute="top" secondItem="IOh-1c-Yvw" secondAttribute="bottom" id="kLq-Eu-arI"/>
+                            <constraint firstItem="gPc-Dk-NZn" firstAttribute="top" secondItem="yxD-uR-5aX" secondAttribute="top" id="rMi-Gs-7Jy"/>
+                            <constraint firstItem="gPc-Dk-NZn" firstAttribute="leading" secondItem="yxD-uR-5aX" secondAttribute="leading" id="y1H-1u-7q9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWD-o3-cc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="1032"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="AboutScreen" width="1600" height="900"/>
         <image name="SelectParksBG" width="842" height="763"/>
-        <image name="Slice 1" width="800" height="800"/>
         <image name="algonquin" width="1920" height="1200"/>
+        <image name="compass" width="800" height="800"/>
+        <image name="compass_background" width="1640" height="2200"/>
         <image name="grey_background" width="2560" height="1440"/>
-        <image name="osgeo_hg_Kompass_neu_abgeschnitten" width="1640" height="2200"/>
-        <image name="oxtongue-river-algonquin-park-wallpaper-for-youtube-channel-art-142-733" width="2560" height="1440"/>
+        <image name="parks of ontario" width="2560" height="1440"/>
     </resources>
 </document>

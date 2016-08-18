@@ -15,6 +15,7 @@
 		0B9810051D64AA89007E534E /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9810041D64AA89007E534E /* DescriptionVC.swift */; };
 		0B9810071D64C6DC007E534E /* SelectParkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9810061D64C6DC007E534E /* SelectParkVC.swift */; };
 		0B98100C1D64C911007E534E /* FindOutMoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B98100B1D64C911007E534E /* FindOutMoreButton.swift */; };
+		0BCC949C1D6563FA009541B0 /* AboutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCC949B1D6563FA009541B0 /* AboutScreenVC.swift */; };
 		0BF5F61B1D65412A001C23F2 /* ParksStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F61A1D65412A001C23F2 /* ParksStruct.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		0B9810041D64AA89007E534E /* DescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 		0B9810061D64C6DC007E534E /* SelectParkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectParkVC.swift; path = ../SelectParkVC.swift; sourceTree = "<group>"; };
 		0B98100B1D64C911007E534E /* FindOutMoreButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindOutMoreButton.swift; sourceTree = "<group>"; };
+		0BCC949B1D6563FA009541B0 /* AboutScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutScreenVC.swift; sourceTree = "<group>"; };
 		0BF5F61A1D65412A001C23F2 /* ParksStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParksStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				0B9810061D64C6DC007E534E /* SelectParkVC.swift */,
 				0B980FF41D63E652007E534E /* ViewController.swift */,
 				0B9810041D64AA89007E534E /* DescriptionVC.swift */,
+				0BCC949B1D6563FA009541B0 /* AboutScreenVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				0B9810071D64C6DC007E534E /* SelectParkVC.swift in Sources */,
 				0B98100C1D64C911007E534E /* FindOutMoreButton.swift in Sources */,
+				0BCC949C1D6563FA009541B0 /* AboutScreenVC.swift in Sources */,
 				0BF5F61B1D65412A001C23F2 /* ParksStruct.swift in Sources */,
 				0B980FF51D63E652007E534E /* ViewController.swift in Sources */,
 				0B9810051D64AA89007E534E /* DescriptionVC.swift in Sources */,

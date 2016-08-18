@@ -11,6 +11,7 @@ import UIKit
 class DescriptionVC: UIViewController {
 
     @IBOutlet weak var textField: UITextView!
+    @IBOutlet weak var parkPictureBanner: UIImageView!
     @IBOutlet weak var parkNameLabel: UILabel!
     
     var selectedPark: Park!
@@ -26,11 +27,32 @@ class DescriptionVC: UIViewController {
         
         textField.text = selectedPark.about
         parkNameLabel.text = selectedPark.name.uppercaseString
+        parkPictureBanner.image = selectedPark.picArray[0]
+        animateBanner(2)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func animateBanner(no:Int)
+    {
+        var imgNumber: Int = no
+        
+        //animate banner with delay 10 and after completion it
+        // recursively calls animateImage method
+        UIView.transitionWithView(self.parkPictureBanner, duration: 10,
+                                   options: UIViewAnimationOptions.TransitionCrossDissolve,
+                                   animations: {self.parkPictureBanner.image =
+                                    self.selectedPark.picArray[imgNumber]},
+                                   completion: {(Bool) in
+                                    imgNumber += 1
+                                    if imgNumber > 2 {
+                                        imgNumber = 0
+                                    }
+                                    self.animateBanner(imgNumber)
+                                    })
     }
     
     @IBAction func aboutButton(sender: AnyObject) {
@@ -54,9 +76,11 @@ class DescriptionVC: UIViewController {
     }
     
     @IBAction func eventsButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(selectedPark.events)
     }
     
     @IBAction func websiteButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(selectedPark.website)
     }
     
     @IBAction func backButton(sender: AnyObject) {
