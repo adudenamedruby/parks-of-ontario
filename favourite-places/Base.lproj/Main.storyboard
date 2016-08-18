@@ -327,8 +327,8 @@
                                     <rect key="frame" x="78" y="65" width="245" height="23"/>
                                 </variation>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="63C-rR-pla">
-                                <rect key="frame" x="20" y="145" width="66" height="282"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="63C-rR-pla">
+                                <rect key="frame" x="20" y="145" width="66" height="275"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="scn-ua-2Wg">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="120"/>
@@ -340,7 +340,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="printText:" destination="2J2-tr-FMR" eventType="touchUpInside" id="J3D-zt-iSH"/>
+                                                    <action selector="aboutButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="XYc-UD-vFa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-hd-PQf">
@@ -350,7 +350,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="printText:" destination="2J2-tr-FMR" eventType="touchUpInside" id="2WV-pe-wS0"/>
+                                                    <action selector="campingButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="xNA-rX-ddv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seY-Sz-mYq">
@@ -360,7 +360,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="printText:" destination="2J2-tr-FMR" eventType="touchUpInside" id="ckX-sO-nxg"/>
+                                                    <action selector="activitiesButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="ktk-uw-RWj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLt-iw-tIa">
@@ -370,44 +370,44 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="printText:" destination="2J2-tr-FMR" eventType="touchUpInside" id="YIt-fG-dSP"/>
+                                                    <action selector="facilitiesButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="Su9-aT-sbT"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nhE-Oh-z4k">
-                                        <rect key="frame" x="0.0" y="156" width="66" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="nhE-Oh-z4k">
+                                        <rect key="frame" x="0.0" y="156" width="66" height="53"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwu-1r-mvI">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                                <state key="normal" title="Alerts">
+                                                <state key="normal" title="Alerts &amp;">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="printText:" destination="2J2-tr-FMR" eventType="touchUpInside" id="0jg-cD-adC"/>
+                                                    <action selector="alertsButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="Bi5-tK-SlT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ge-13-7rH">
-                                                <rect key="frame" x="0.0" y="30" width="66" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ge-13-7rH">
+                                                <rect key="frame" x="0.0" y="23" width="66" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Events">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="printText:" destination="2J2-tr-FMR" eventType="touchUpInside" id="7IA-Cy-hvn"/>
+                                                    <action selector="eventsButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="gjg-Do-Du2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-Ni-O4L">
-                                        <rect key="frame" x="0.0" y="252" width="66" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-Ni-O4L">
+                                        <rect key="frame" x="0.0" y="245" width="66" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Website">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="printText:" destination="2J2-tr-FMR" eventType="touchUpInside" id="RE3-6e-hcM"/>
+                                            <action selector="websiteButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="8Me-ty-cXK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -461,6 +461,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="parkNameLabel" destination="1wL-KD-0A0" id="faT-5C-gtx"/>
                         <outlet property="textField" destination="VkR-tn-VDS" id="Jb6-Hs-JP2"/>
                     </connections>
                 </viewController>

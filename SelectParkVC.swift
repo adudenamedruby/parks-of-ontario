@@ -12,9 +12,9 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var findOutMoreButton: FindOutMoreButton!
     
-    let parks = ["Aaron", "Algonquin", "Arrowhead", "Awenda", "Balsam Lake", "Bass Lake"]
+    let parks = parkList //["Aaron", "Algonquin", "Arrowhead", "Awenda", "Balsam Lake", "Bass Lake"]
     let segueIdentifier = "ShowPark"
-    var parkToPass = String()
+    var parkToPass: Park!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "TextCell")
         
-        cell.textLabel?.text = parks[indexPath.row]
+        cell.textLabel?.text = parks[indexPath.row].name.capitalizedString
         
         return cell
         
@@ -58,7 +58,7 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         // Pass the selected object to the new view controller.
         if segue.identifier == segueIdentifier, let destination = segue.destinationViewController as? DescriptionVC {
             
-            destination.parkName = parkToPass
+            destination.selectedPark = parkToPass
             
         }
     }
