@@ -10,9 +10,10 @@ import UIKit
 
 class SelectParkVC: UIViewController, UITableViewDelegate {
 
-    @IBOutlet weak var findOutMoreButton: FindOutMoreButton!
     
-    let parks = parkList //["Aaron", "Algonquin", "Arrowhead", "Awenda", "Balsam Lake", "Bass Lake"]
+    @IBOutlet weak var tableProperties: UITableView!
+    
+    let parks = parkList
     let segueIdentifier = "ShowPark"
     var parkToPass: Park!
     
@@ -20,6 +21,16 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableProperties.layer.cornerRadius = 5.0
+        tableProperties.layer.borderColor = UIColor.darkGrayColor().CGColor
+        tableProperties.layer.borderWidth = 1.0
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +45,7 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "TextCell")
+        cell.textLabel?.textAlignment = .Center
         
         cell.textLabel?.text = parks[indexPath.row].name.capitalizedString
         

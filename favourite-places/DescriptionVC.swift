@@ -25,7 +25,7 @@ class DescriptionVC: UIViewController {
         super.viewWillAppear(animated)
         
         textField.text = selectedPark.about
-        parkNameLabel.text = selectedPark.name
+        parkNameLabel.text = selectedPark.name.uppercaseString
     }
 
     override func didReceiveMemoryWarning() {
