@@ -58,6 +58,10 @@ class DescriptionVC: UIViewController {
     @IBAction func aboutButton(sender: AnyObject) {
         textField.text = selectedPark.about
     }
+    
+    @IBAction func generalButton(sender: AnyObject) {
+        textField.text = selectedPark.general
+    }
 
     @IBAction func campingButton(sender: AnyObject) {
         textField.text = selectedPark.camping

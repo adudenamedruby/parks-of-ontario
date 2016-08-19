@@ -409,10 +409,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="63C-rR-pla">
-                                <rect key="frame" x="20" y="145" width="66" height="275"/>
+                                <rect key="frame" x="20" y="145" width="66" height="305"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="scn-ua-2Wg">
-                                        <rect key="frame" x="0.0" y="0.0" width="66" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="150"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HND-s6-SHB">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
@@ -424,8 +424,18 @@
                                                     <action selector="aboutButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="XYc-UD-vFa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-hd-PQf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wB5-4T-GjL">
                                                 <rect key="frame" x="0.0" y="30" width="66" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="General">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="generalButton:" destination="2J2-tr-FMR" eventType="touchUpInside" id="shZ-EL-m7r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-hd-PQf">
+                                                <rect key="frame" x="0.0" y="60" width="66" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Camping">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -435,7 +445,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seY-Sz-mYq">
-                                                <rect key="frame" x="0.0" y="60" width="66" height="30"/>
+                                                <rect key="frame" x="0.0" y="90" width="66" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Activities">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -445,7 +455,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLt-iw-tIa">
-                                                <rect key="frame" x="0.0" y="90" width="66" height="30"/>
+                                                <rect key="frame" x="0.0" y="120" width="66" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Facilities">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -457,7 +467,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="nhE-Oh-z4k">
-                                        <rect key="frame" x="0.0" y="156" width="66" height="53"/>
+                                        <rect key="frame" x="0.0" y="186" width="66" height="53"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwu-1r-mvI">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
@@ -482,7 +492,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-Ni-O4L">
-                                        <rect key="frame" x="0.0" y="245" width="66" height="30"/>
+                                        <rect key="frame" x="0.0" y="275" width="66" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Website">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -600,18 +610,18 @@
                                     <constraint firstAttribute="width" constant="302" id="kzm-SK-Yw2"/>
                                     <constraint firstAttribute="height" constant="405" id="mdP-Hy-3DJ"/>
                                 </constraints>
-                                <string key="text">Parks of Ontario
+                                <mutableString key="text">Parks of Ontario
 GPL-3.0 Copyright (C) 2016 Roux Buciu
 
 Made with love and sprinkly bits at ACME LABS
 
-The app was created to hilight the beautiful provincial parks that Ontario has to offer. Each park has a brief outline, what amenities/activities/facilities are available, links to alerts &amp; events for each park as well as contact information.
+The app was created to highlight the beautiful provincial parks that Ontario has to offer. Each park has a brief outline, what amenities/activities/facilities are available, links to alerts &amp; events for each park as well as contact information.
 
 Information updated: August 2016
 
 ***********************************************
 ACME LABS is NOT affiliated with Ontario Provincial Parks nor with any associated government body of Ontario.
-************************************************</string>
+************************************************</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

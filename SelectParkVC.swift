@@ -27,6 +27,7 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Styling the table
         tableProperties.layer.cornerRadius = 5.0
         tableProperties.layer.borderColor = UIColor.darkGrayColor().CGColor
         tableProperties.layer.borderWidth = 1.0
@@ -37,6 +38,9 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // Setting up the park selection table
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return parks.count
@@ -62,9 +66,7 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         performSegueWithIdentifier("ShowPark", sender: self)
     }
     
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
