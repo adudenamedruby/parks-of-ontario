@@ -595,7 +595,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z7m-yn-EOp">
-                                <rect key="frame" x="149" y="97.5" width="302" height="405"/>
+                                <rect key="frame" x="149" y="98" width="302" height="405"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="302" id="kzm-SK-Yw2"/>
                                     <constraint firstAttribute="height" constant="405" id="mdP-Hy-3DJ"/>
