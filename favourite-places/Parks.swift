@@ -41,6 +41,8 @@ let fPSh = "\n\u{2022} Picnic Shelters"
 let fR = "\n\u{2022} Rentals"
 let fVC = "\n\u{2022} Visitor Centre"
 
+// \n\u{2022}
+
 // All the park information: hardcoded into the app as the Ontario Provincial
 // Park website has changed. The HTML is unreliable for app store submission.
 let aaron = Park(name: "aaron",
@@ -72,7 +74,7 @@ let awenda = Park(name: "awenda",
                   facilities: "")
 
 let balsam = Park(name: "balsam lake",
-                about: "\u{2022} ",
+                  about: "\u{2022} Boating on the Trent-Severn Waterway\n\u{2022} Large sandy beach\n\u{2022} Good fishing for Walleye, Muskellunge, Large and Small Mouth Bass\n\u{2022} Canoe, kayak and paddleboat rentals\n\u{2022} Easy day-trip hiking trails\n\u{2022} Gift shop\n\u{2022} Fully-furnished 4-bedroom rental cottage near the water",
                 general: "\u{2022} ",
                 camping: "",
                 activities: "",
