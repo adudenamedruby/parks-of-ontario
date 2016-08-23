@@ -18,10 +18,15 @@ class DescriptionVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     var selectedPark: Park!
     var currentTableData = [Int: (heading: String, detail: String)]()
     
+    var tappedCellExists: Bool!
+    var selectedRowIndex: Int!
+    var cellState: Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         informationTable.tableFooterView = UIView()
+        resetCellTrackers()
 
     }
     
@@ -62,10 +67,12 @@ class DescriptionVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     
     // TABLE FUNCTIONALITY
-    
-    var tappedCellExists = false
-    var selectedRowIndex = -1
-    var cellState: Bool = false // true == open; false == closed
+   
+    func resetCellTrackers() {
+        tappedCellExists = false
+        selectedRowIndex = -1
+        cellState = false // true == open; false == closed
+    }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -110,9 +117,6 @@ class DescriptionVC: UIViewController, UITableViewDataSource, UITableViewDelegat
             cellState = false
             currentCell.infoLabel.text = currentTableData[indexPath.row]?.heading
         }
-        informationTable.cellForRowAtIndexPath(indexPath)?.backgroundColor = UIColor.lightGrayColor()
-        //tableView.cellForRowAtIndexPath(indexPath)?.backgroundColor = UIColor.lightGrayColor()
-        
         
          // avoid paint the cell is the index is outside the bounds
          if self.selectedRowIndex != -1 {
@@ -166,6 +170,7 @@ class DescriptionVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         informationTable.hidden = false
         
         currentTableData = selectedPark.camping
+        resetCellTrackers()
         informationTable.reloadData()
     }
 
@@ -174,6 +179,7 @@ class DescriptionVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         informationTable.hidden = false
         
         currentTableData = selectedPark.activities
+        resetCellTrackers()
         informationTable.reloadData()
     }
     
@@ -182,6 +188,7 @@ class DescriptionVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         informationTable.hidden = false
         
         currentTableData = selectedPark.facilities
+        resetCellTrackers()
         informationTable.reloadData()
     }
     
