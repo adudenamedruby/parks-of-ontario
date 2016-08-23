@@ -510,14 +510,6 @@
                                     <constraint firstAttribute="width" constant="1" id="Jb5-PW-tNg"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VkR-tn-VDS">
-                                <rect key="frame" x="101" y="145" width="479" height="435"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PKZ-fS-WfY">
                                 <rect key="frame" x="119" y="45" width="183" height="45"/>
                                 <subviews>
@@ -544,22 +536,68 @@
                                     <rect key="frame" x="119" y="45" width="183" height="45"/>
                                 </variation>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uue-6x-nmQ">
+                                <rect key="frame" x="105" y="145" width="475" height="435"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZhN-1K-uYG">
+                                <rect key="frame" x="105" y="145" width="475" height="435"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ParkDescription" id="ThC-Xl-84O" customClass="DescriptionTableViewCell" customModule="ParksOfOntario" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="475" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ThC-Xl-84O" id="52Z-xf-LeV">
+                                            <rect key="frame" x="0.0" y="0.0" width="475" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36b-1c-VR7">
+                                                    <rect key="frame" x="8" y="3" width="459" height="38"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="36b-1c-VR7" secondAttribute="bottom" constant="3" id="Jos-VO-WsS"/>
+                                                <constraint firstItem="36b-1c-VR7" firstAttribute="top" secondItem="52Z-xf-LeV" secondAttribute="top" constant="3" id="U62-iZ-fY1"/>
+                                                <constraint firstAttribute="trailing" secondItem="36b-1c-VR7" secondAttribute="trailing" constant="8" id="nKA-PW-XgP"/>
+                                                <constraint firstItem="36b-1c-VR7" firstAttribute="leading" secondItem="52Z-xf-LeV" secondAttribute="leading" constant="8" id="o8j-vO-hLr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="infoLabel" destination="36b-1c-VR7" id="xeh-TV-VsI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2J2-tr-FMR" id="dMs-ac-xZG"/>
+                                    <outlet property="delegate" destination="2J2-tr-FMR" id="hmt-uf-z0c"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VkR-tn-VDS" firstAttribute="top" secondItem="FC6-12-C0Z" secondAttribute="bottom" constant="15" id="1PA-C5-mEg"/>
+                            <constraint firstItem="ZhN-1K-uYG" firstAttribute="trailing" secondItem="YIV-3E-rOc" secondAttribute="trailingMargin" id="3Tc-QS-sMF"/>
+                            <constraint firstItem="uue-6x-nmQ" firstAttribute="top" secondItem="FC6-12-C0Z" secondAttribute="bottom" constant="15" id="8xs-fA-aQR"/>
+                            <constraint firstItem="L8Q-at-Lw9" firstAttribute="top" secondItem="uue-6x-nmQ" secondAttribute="bottom" constant="20" id="98h-1K-NDp"/>
                             <constraint firstItem="FC6-12-C0Z" firstAttribute="top" secondItem="YIV-3E-rOc" secondAttribute="top" id="9Z3-Zi-ciB"/>
                             <constraint firstItem="hHU-iu-fmL" firstAttribute="top" secondItem="YIV-3E-rOc" secondAttribute="top" constant="10" id="Byf-Lq-EEc"/>
-                            <constraint firstItem="VkR-tn-VDS" firstAttribute="leading" secondItem="HZo-kh-NUZ" secondAttribute="trailing" constant="6" id="Dzc-a7-pyd"/>
+                            <constraint firstItem="ZhN-1K-uYG" firstAttribute="leading" secondItem="HZo-kh-NUZ" secondAttribute="trailing" constant="10" id="Fwd-KP-3wl"/>
                             <constraint firstItem="63C-rR-pla" firstAttribute="top" secondItem="FC6-12-C0Z" secondAttribute="bottom" constant="15" id="HLU-ue-arb"/>
+                            <constraint firstItem="ZhN-1K-uYG" firstAttribute="top" secondItem="FC6-12-C0Z" secondAttribute="bottom" constant="15" id="J3U-01-OCg"/>
                             <constraint firstItem="FC6-12-C0Z" firstAttribute="leading" secondItem="YIV-3E-rOc" secondAttribute="leading" id="JLh-MU-FZm"/>
                             <constraint firstItem="63C-rR-pla" firstAttribute="leading" secondItem="YIV-3E-rOc" secondAttribute="leadingMargin" id="QdC-9r-bDj"/>
                             <constraint firstAttribute="bottomMargin" secondItem="HZo-kh-NUZ" secondAttribute="bottom" constant="20" id="W1r-RI-GhF"/>
-                            <constraint firstItem="VkR-tn-VDS" firstAttribute="trailing" secondItem="YIV-3E-rOc" secondAttribute="trailingMargin" id="Wbt-G8-uYv"/>
+                            <constraint firstItem="uue-6x-nmQ" firstAttribute="leading" secondItem="HZo-kh-NUZ" secondAttribute="trailing" constant="10" id="Xfp-m9-t8f"/>
                             <constraint firstItem="PKZ-fS-WfY" firstAttribute="top" secondItem="jCV-Jr-A8c" secondAttribute="bottom" constant="3" id="aYq-gM-MWg"/>
-                            <constraint firstItem="L8Q-at-Lw9" firstAttribute="top" secondItem="VkR-tn-VDS" secondAttribute="bottom" constant="20" id="f3C-bU-guV"/>
                             <constraint firstItem="HZo-kh-NUZ" firstAttribute="leading" secondItem="63C-rR-pla" secondAttribute="trailing" constant="8" id="ge8-03-1IM"/>
                             <constraint firstItem="hHU-iu-fmL" firstAttribute="leading" secondItem="YIV-3E-rOc" secondAttribute="leading" constant="4" id="o09-dX-dqg"/>
+                            <constraint firstItem="L8Q-at-Lw9" firstAttribute="top" secondItem="ZhN-1K-uYG" secondAttribute="bottom" constant="20" id="olM-4n-lxo"/>
+                            <constraint firstItem="uue-6x-nmQ" firstAttribute="trailing" secondItem="YIV-3E-rOc" secondAttribute="trailingMargin" id="rWj-1g-Fqo"/>
                             <constraint firstItem="PKZ-fS-WfY" firstAttribute="top" secondItem="jCV-Jr-A8c" secondAttribute="bottom" constant="25" id="rug-Nm-sbg"/>
                             <constraint firstItem="PKZ-fS-WfY" firstAttribute="centerX" secondItem="YIV-3E-rOc" secondAttribute="centerX" id="tAF-KK-zko"/>
                             <constraint firstItem="PKZ-fS-WfY" firstAttribute="centerX" secondItem="YIV-3E-rOc" secondAttribute="centerX" id="vio-8B-f9x"/>
@@ -580,9 +618,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="informationTable" destination="ZhN-1K-uYG" id="7J7-du-moB"/>
                         <outlet property="parkNameLabel" destination="1wL-KD-0A0" id="faT-5C-gtx"/>
                         <outlet property="parkPictureBanner" destination="FC6-12-C0Z" id="ODX-Xe-1Xr"/>
-                        <outlet property="textField" destination="VkR-tn-VDS" id="Jb6-Hs-JP2"/>
+                        <outlet property="textField" destination="uue-6x-nmQ" id="QFb-Ix-hiN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wl-M6-Gb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -610,7 +649,7 @@
                                     <constraint firstAttribute="width" constant="302" id="kzm-SK-Yw2"/>
                                     <constraint firstAttribute="height" constant="405" id="mdP-Hy-3DJ"/>
                                 </constraints>
-                                <mutableString key="text">Parks of Ontario
+                                <string key="text">Parks of Ontario
 GPL-3.0 Copyright (C) 2016 Roux Buciu
 
 Made with love and sprinkly bits at ACME LABS
@@ -621,7 +660,7 @@ Information updated: August 2016
 
 ***********************************************
 ACME LABS is NOT affiliated with Ontario Provincial Parks nor with any associated government body of Ontario.
-************************************************</mutableString>
+************************************************</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -14,7 +14,6 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableProperties: UITableView!
     
     let parks = parkList
-    let segueIdentifier = "ShowPark"
     var parkToPass: Park!
     
     override func viewDidLoad() {
@@ -70,7 +69,7 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == segueIdentifier, let destination = segue.destinationViewController as? DescriptionVC {
+        if segue.identifier == "ShowPark", let destination = segue.destinationViewController as? DescriptionVC {
             
             destination.selectedPark = parkToPass
             

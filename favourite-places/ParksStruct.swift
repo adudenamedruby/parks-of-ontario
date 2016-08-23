@@ -13,9 +13,9 @@ struct Park {
     let name: String
     let about: String
     let general: String
-    let camping: String
-    let activities: String
-    let facilities: String
+    let camping: [Int: (heading: String, detail: String)]
+    let activities: [Int: (heading: String, detail: String)]
+    let facilities: [Int: (heading: String, detail: String)]
     let website: NSURL
     let alerts: NSURL
     let events: NSURL
@@ -23,8 +23,10 @@ struct Park {
     var linkName: String
     var picArray = [UIImage]()
     
-    init(name: String, about: String, general: String, camping: String, activities: String,
-         facilities: String) {
+    init(name: String, about: String, general: String,
+         camping: [Int: (heading: String, detail: String)],
+         activities: [Int: (heading: String, detail: String)],
+         facilities: [Int: (heading: String, detail: String)]) {
         
         self.name = name.capitalizedString
         self.about = about
