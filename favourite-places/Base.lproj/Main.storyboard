@@ -551,7 +551,7 @@
                                         <rect key="frame" x="0.0" y="28" width="475" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ThC-Xl-84O" id="52Z-xf-LeV">
-                                            <rect key="frame" x="0.0" y="0.0" width="475" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="475" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36b-1c-VR7">
@@ -640,31 +640,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-Dk-NZn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Turq Background" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-Dk-NZn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.48267019283040913" green="0.73656331809999998" blue="0.52619783292381117" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.24031419800000001" green="0.73656331809999998" blue="0.22788290999999999" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z7m-yn-EOp">
-                                <rect key="frame" x="149" y="98" width="302" height="405"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="302" id="kzm-SK-Yw2"/>
-                                    <constraint firstAttribute="height" constant="405" id="mdP-Hy-3DJ"/>
-                                </constraints>
-                                <string key="text">Parks of Ontario
-GPL-3.0 Copyright (C) 2016 Roux Buciu
-
-Made with love and sprinkly bits at ACME LABS
-
-The app was created to highlight the beautiful provincial parks that Ontario has to offer. Each park has a brief outline, what amenities/activities/facilities are available, links to alerts &amp; events for each park as well as contact information.
-
-Information updated: August 2016
-
-***********************************************
-ACME LABS is NOT affiliated with Ontario Provincial Parks nor with any associated government body of Ontario.
-************************************************</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb7-fp-6Cd">
                                 <rect key="frame" x="11" y="20" width="46" height="30"/>
                                 <constraints>
@@ -679,18 +659,49 @@ ACME LABS is NOT affiliated with Ontario Provincial Parks nor with any associate
                                     <action selector="backButton:" destination="6R4-Wc-CAk" eventType="touchUpInside" id="yqV-HO-dn1"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-for-background" translatesAutoresizingMaskIntoConstraints="NO" id="xEt-cy-yBo">
+                                <rect key="frame" x="169" y="40" width="263" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="LsV-73-KTY"/>
+                                    <constraint firstAttribute="height" constant="101" id="S3D-iT-smv"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z7m-yn-EOp">
+                                <rect key="frame" x="149" y="166" width="302" height="342"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="kzm-SK-Yw2"/>
+                                    <constraint firstAttribute="height" constant="342" id="mdP-Hy-3DJ"/>
+                                </constraints>
+                                <string key="text">Parks of Ontario
+GPL-3.0 Copyright (C) 2016 Roux Buciu
+
+Created to highlight the beautiful provincial parks that Ontario has to offer, Parks of Ontario offers a brief outline of each park, what amenities/activities/facilities are available, links to alerts &amp; events as contact information. All at your fingertips!
+
+Information updated: August 2016</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Z7m-yn-EOp" firstAttribute="centerY" secondItem="yxD-uR-5aX" secondAttribute="centerY" id="0mt-Ie-uzy"/>
+                            <constraint firstItem="Z7m-yn-EOp" firstAttribute="centerY" secondItem="yxD-uR-5aX" secondAttribute="centerY" constant="-31" id="0mt-Ie-uzy"/>
                             <constraint firstItem="fxa-nO-rjH" firstAttribute="top" secondItem="gPc-Dk-NZn" secondAttribute="bottom" id="5V1-e4-Whj"/>
+                            <constraint firstItem="xEt-cy-yBo" firstAttribute="top" secondItem="IOh-1c-Yvw" secondAttribute="bottom" constant="20" id="Eq4-vR-AdM"/>
+                            <constraint firstItem="xEt-cy-yBo" firstAttribute="centerX" secondItem="yxD-uR-5aX" secondAttribute="centerX" id="Qvq-OI-sRY"/>
                             <constraint firstItem="Jb7-fp-6Cd" firstAttribute="leading" secondItem="yxD-uR-5aX" secondAttribute="leadingMargin" constant="-9" id="R4K-95-JXP"/>
                             <constraint firstItem="Z7m-yn-EOp" firstAttribute="centerX" secondItem="yxD-uR-5aX" secondAttribute="centerX" id="aue-Dc-I07"/>
                             <constraint firstAttribute="trailing" secondItem="gPc-Dk-NZn" secondAttribute="trailing" id="eGH-PU-9Op"/>
                             <constraint firstItem="Jb7-fp-6Cd" firstAttribute="top" secondItem="IOh-1c-Yvw" secondAttribute="bottom" id="kLq-Eu-arI"/>
                             <constraint firstItem="gPc-Dk-NZn" firstAttribute="top" secondItem="yxD-uR-5aX" secondAttribute="top" id="rMi-Gs-7Jy"/>
+                            <constraint firstItem="Z7m-yn-EOp" firstAttribute="top" secondItem="xEt-cy-yBo" secondAttribute="bottom" constant="25" id="wOa-VA-4Zh"/>
                             <constraint firstItem="gPc-Dk-NZn" firstAttribute="leading" secondItem="yxD-uR-5aX" secondAttribute="leading" id="y1H-1u-7q9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0mt-Ie-uzy"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWD-o3-cc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -699,12 +710,13 @@ ACME LABS is NOT affiliated with Ontario Provincial Parks nor with any associate
         </scene>
     </scenes>
     <resources>
-        <image name="AboutScreen" width="1600" height="900"/>
         <image name="SelectParksBG" width="842" height="763"/>
+        <image name="Turq Background" width="1" height="2732"/>
         <image name="algonquin" width="1920" height="1200"/>
         <image name="compass" width="800" height="800"/>
         <image name="compass_background" width="1640" height="2200"/>
         <image name="grey_background" width="2560" height="1440"/>
+        <image name="logo-for-background" width="624" height="330"/>
         <image name="parks of ontario" width="2560" height="1440"/>
     </resources>
 </document>
