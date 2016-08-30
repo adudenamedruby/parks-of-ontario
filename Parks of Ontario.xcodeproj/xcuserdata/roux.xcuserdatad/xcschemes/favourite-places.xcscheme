@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B980FEE1D63E652007E534E"
                BuildableName = "ParksOfOntario.app"
-               BlueprintName = "ParksOfOntario"
-               ReferencedContainer = "container:ParksOfOntario.xcodeproj">
+               BlueprintName = "Parks of Ontario"
+               ReferencedContainer = "container:Parks of Ontario.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B980FEE1D63E652007E534E"
             BuildableName = "ParksOfOntario.app"
-            BlueprintName = "ParksOfOntario"
-            ReferencedContainer = "container:ParksOfOntario.xcodeproj">
+            BlueprintName = "Parks of Ontario"
+            ReferencedContainer = "container:Parks of Ontario.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,8 +57,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B980FEE1D63E652007E534E"
             BuildableName = "ParksOfOntario.app"
-            BlueprintName = "ParksOfOntario"
-            ReferencedContainer = "container:ParksOfOntario.xcodeproj">
+            BlueprintName = "Parks of Ontario"
+            ReferencedContainer = "container:Parks of Ontario.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,8 +76,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B980FEE1D63E652007E534E"
             BuildableName = "ParksOfOntario.app"
-            BlueprintName = "ParksOfOntario"
-            ReferencedContainer = "container:ParksOfOntario.xcodeproj">
+            BlueprintName = "Parks of Ontario"
+            ReferencedContainer = "container:Parks of Ontario.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

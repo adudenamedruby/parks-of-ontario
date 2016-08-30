@@ -252,7 +252,7 @@
 		0B343E7A1D6B996300099779 /* Windy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Windy.swift; sourceTree = "<group>"; };
 		0B343E7C1D6B996F00099779 /* Woodland.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Woodland.swift; sourceTree = "<group>"; };
 		0B6709381D6A953700058AFC /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
-		0B980FEF1D63E652007E534E /* ParksOfOntario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParksOfOntario.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B980FEF1D63E652007E534E /* Parks of Ontario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parks of Ontario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B980FF21D63E652007E534E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B980FF41D63E652007E534E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B980FF71D63E652007E534E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -410,7 +410,7 @@
 		0B980FF01D63E652007E534E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B980FEF1D63E652007E534E /* ParksOfOntario.app */,
+				0B980FEF1D63E652007E534E /* Parks of Ontario.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -462,9 +462,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B980FEE1D63E652007E534E /* ParksOfOntario */ = {
+		0B980FEE1D63E652007E534E /* Parks of Ontario */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B9810011D63E652007E534E /* Build configuration list for PBXNativeTarget "ParksOfOntario" */;
+			buildConfigurationList = 0B9810011D63E652007E534E /* Build configuration list for PBXNativeTarget "Parks of Ontario" */;
 			buildPhases = (
 				0B980FEB1D63E652007E534E /* Sources */,
 				0B980FEC1D63E652007E534E /* Frameworks */,
@@ -474,9 +474,9 @@
 			);
 			dependencies = (
 			);
-			name = ParksOfOntario;
+			name = "Parks of Ontario";
 			productName = "favourite-places";
-			productReference = 0B980FEF1D63E652007E534E /* ParksOfOntario.app */;
+			productReference = 0B980FEF1D63E652007E534E /* Parks of Ontario.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -494,7 +494,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0B980FEA1D63E652007E534E /* Build configuration list for PBXProject "ParksOfOntario" */;
+			buildConfigurationList = 0B980FEA1D63E652007E534E /* Build configuration list for PBXProject "Parks of Ontario" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -507,7 +507,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B980FEE1D63E652007E534E /* ParksOfOntario */,
+				0B980FEE1D63E652007E534E /* Parks of Ontario */,
 			);
 		};
 /* End PBXProject section */
@@ -770,7 +770,7 @@
 				INFOPLIST_FILE = "favourite-places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.acmelabs.favourite-places";
-				PRODUCT_NAME = ParksOfOntario;
+				PRODUCT_NAME = "Parks of Ontario";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -782,7 +782,7 @@
 				INFOPLIST_FILE = "favourite-places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.acmelabs.favourite-places";
-				PRODUCT_NAME = ParksOfOntario;
+				PRODUCT_NAME = "Parks of Ontario";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -790,7 +790,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B980FEA1D63E652007E534E /* Build configuration list for PBXProject "ParksOfOntario" */ = {
+		0B980FEA1D63E652007E534E /* Build configuration list for PBXProject "Parks of Ontario" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B980FFF1D63E652007E534E /* Debug */,
@@ -799,7 +799,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B9810011D63E652007E534E /* Build configuration list for PBXNativeTarget "ParksOfOntario" */ = {
+		0B9810011D63E652007E534E /* Build configuration list for PBXNativeTarget "Parks of Ontario" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B9810021D63E652007E534E /* Debug */,
