@@ -25,6 +25,7 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        animateBanner(0)
         
     }
     
@@ -35,7 +36,6 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         tableProperties.layer.cornerRadius = 5.0
         tableProperties.layer.borderColor = UIColor.darkGrayColor().CGColor
         tableProperties.layer.borderWidth = 1.0
-        animateBanner(0)
         
     }
 
