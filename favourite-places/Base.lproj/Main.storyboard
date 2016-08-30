@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parks of ontario" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-1P-5cc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="QCj-Q1-qIq">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="QCj-Q1-qIq">
                                 <rect key="frame" x="20" y="120" width="267" height="318"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Crw-R0-XVc">
@@ -225,7 +225,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LGZ-jN-fhd">
-                                <rect key="frame" x="175" y="60" width="210" height="70"/>
+                                <rect key="frame" x="175" y="50" width="210" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Find your dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKs-7Y-sOr">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="38"/>
@@ -312,7 +312,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Yjh-Eh-Ir9" firstAttribute="top" secondItem="LGZ-jN-fhd" secondAttribute="bottom" constant="-40" id="6rN-XX-6Lq"/>
-                            <constraint firstItem="LGZ-jN-fhd" firstAttribute="bottom" secondItem="Yjh-Eh-Ir9" secondAttribute="top" constant="-20" id="8EQ-aL-ekU"/>
+                            <constraint firstItem="LGZ-jN-fhd" firstAttribute="bottom" secondItem="Yjh-Eh-Ir9" secondAttribute="top" constant="-30" id="8EQ-aL-ekU"/>
                             <constraint firstAttribute="trailing" secondItem="GJV-vI-AKL" secondAttribute="trailing" id="A9Z-wk-Zt0"/>
                             <constraint firstItem="UO7-gO-PcX" firstAttribute="top" secondItem="GJV-vI-AKL" secondAttribute="bottom" id="AU9-sP-kJK"/>
                             <constraint firstItem="Fnz-Cv-hnh" firstAttribute="leading" secondItem="Vf6-L7-uBU" secondAttribute="leadingMargin" id="IFo-9l-Wyb"/>
@@ -358,6 +358,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="GJV-vI-AKL" id="HAL-SZ-Exi"/>
                         <outlet property="tableProperties" destination="Yjh-Eh-Ir9" id="J7E-Pa-Kru"/>
                     </connections>
                 </viewController>
@@ -551,13 +552,13 @@
                                         <rect key="frame" x="0.0" y="28" width="475" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ThC-Xl-84O" id="52Z-xf-LeV">
-                                            <rect key="frame" x="0.0" y="0.0" width="475" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="475" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36b-1c-VR7">
                                                     <rect key="frame" x="8" y="3" width="459" height="38"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>

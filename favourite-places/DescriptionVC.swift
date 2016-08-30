@@ -51,7 +51,7 @@ class DescriptionVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         
         // Animate the banner with delay 10 secs and after completion it
         // recursively calls animateBanner method for a neverending animation!
-        UIView.transitionWithView(self.parkPictureBanner, duration: 10,
+        UIView.transitionWithView(self.parkPictureBanner, duration: 6,
                                    options: UIViewAnimationOptions.TransitionCrossDissolve,
                                    animations: {self.parkPictureBanner.image =
                                     self.selectedPark.picArray[imgNumber]},

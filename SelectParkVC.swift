@@ -12,9 +12,14 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
 
     
     @IBOutlet weak var tableProperties: UITableView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     let parks = parkList
+    let backgroundPics = ["SelectParksBG.png", "awenda3.png", "blue lake2.png", "bon echo1.png", "forks of the credit2.png", "potholes1.png"]
+    
     var parkToPass: Park!
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +35,33 @@ class SelectParkVC: UIViewController, UITableViewDelegate {
         tableProperties.layer.cornerRadius = 5.0
         tableProperties.layer.borderColor = UIColor.darkGrayColor().CGColor
         tableProperties.layer.borderWidth = 1.0
+        animateBanner(0)
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func animateBanner(no:Int)
+    {
+        var imgNumber: Int = no
+        
+        // Animate the banner with delay 10 secs and after completion it
+        // recursively calls animateBanner method for a neverending animation!
+        UIView.transitionWithView(self.backgroundImage, duration: 15,
+                                  options: UIViewAnimationOptions.TransitionCrossDissolve,
+                                  animations: {self.backgroundImage.image =
+                                    UIImage(named: self.backgroundPics[imgNumber])},
+                                  completion: {(Bool) in
+                                    imgNumber += 1
+                                    if imgNumber > 5 {
+                                        imgNumber = 0
+                                    }
+                                    self.animateBanner(imgNumber)
+        })
     }
     
     
